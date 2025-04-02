@@ -3,3 +3,18 @@ Agregar linea de código de java para imprimir un mensaje de hola mundo:
 
 public static void main(String[] args) {
 System.out.println("Hola mundo");
+
+// Ejemplos de variables en Java
+int numero = 10; // Variable entera
+double decimal = 3.14; // Variable de punto flotante
+char caracter = 'A'; // Variable de carácter
+boolean esVerdadero = true; // Variable booleana
+String texto = "Esto es una cadena"; // Variable de texto
+
+// Imprimir las variables
+System.out.println("Número: " + numero);
+System.out.println("Decimal: " + decimal);
+System.out.println("Carácter: " + caracter);
+System.out.println("Booleano: " + esVerdadero);
+System.out.println("Texto: " + texto);
+
