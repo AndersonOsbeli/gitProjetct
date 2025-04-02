@@ -25,5 +25,22 @@ public class JavaEjemplo {
        
        System.out.println("Ingrese año de nacimiento: ");
        var fechaNacimiento = consola.nextLine();
+
+ //normalizar valores
+       var nombre2 = nombre.trim().toUpperCase().substring(0, 2);
+       var apellido2 = apellido.trim().toUpperCase().substring(0, 2);
+       var fechaNew = fechaNacimiento.trim().substring(2);
+        
+         var numeroAleatorio = aleatorio.nextInt(9999)+1;
+         var numeroAleatorioFormato = String.format("%04d", numeroAleatorio);
+         
+         var idUnico = nombre2 + apellido2 + fechaNew + numeroAleatorioFormato;
+         
+         System.out.printf("""
+                %nHola %s,
+                \tTu nuevo número de identificación (ID) generado por el sistema es:
+                \t%s
+                \t¡Felicidades!
+                """, nombre, idUnico);
     }
 }
