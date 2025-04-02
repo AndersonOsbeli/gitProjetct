@@ -1,1 +1,5 @@
 # gitProject 
+Agregar linea de código de java para imprimir un mensaje de hola mundo:
+
+public static void main(String[] args) {
+System.out.println("Hola mundo");
