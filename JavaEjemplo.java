@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author osbel
  */
 public class JavaEjemplo {
+    //creacion de un sistema de reserva de hoteles
 
     public static void main(String[] args) {
         var consola = new Scanner(System.in);
@@ -26,7 +27,7 @@ public class JavaEjemplo {
        System.out.println("Ingrese año de nacimiento: ");
        var fechaNacimiento = consola.nextLine();
 
- //normalizar valores
+ //normalizar valores para generar un ID unico
        var nombre2 = nombre.trim().toUpperCase().substring(0, 2);
        var apellido2 = apellido.trim().toUpperCase().substring(0, 2);
        var fechaNew = fechaNacimiento.trim().substring(2);
@@ -44,7 +45,7 @@ public class JavaEjemplo {
                 """, nombre, idUnico);
 
                 System.out.println("precio de habitaciones");
-         
+         //definiendo los procios de las habitaciones
          int estandar = 900;
          int suite = 1500;
          int premium = 2500;
@@ -57,6 +58,7 @@ public class JavaEjemplo {
          System.out.println("2. Suite");
          System.out.println("3. Premium");
          
+         // Solicitar al usuario que seleccione una opción
          int opcion = consola.nextInt();
          int precioSeleccionado = 0;
 
